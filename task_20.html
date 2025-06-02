@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hoverable Sidenav Buttons</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .sidenav {
+      height: 100%;
+      width: 60px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #f1f1f1;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+
+    .sidenav a {
+      padding: 15px 0;
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+      text-align: center;
+    }
+
+    .sidenav a:hover {
+      width: 200px;
+      text-align: left;
+      padding-left: 20px;
+    }
+
+    .green { background-color: #4CAF50; }
+    .blue { background-color: #2196F3; }
+    .red { background-color: #f44336; }
+    .gray { background-color: #555; }
+
+    .main {
+      margin-left: 70px; /* space for sidenav */
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    .sidenav a span {
+      display: none;
+      padding-left: 10px;
+    }
+
+    .sidenav a:hover span {
+      display: inline;
+    }
+  </style>
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="#" class="green"><span> Green</span></a>
+  <a href="#" class="blue"><span> Blue</span></a>
+  <a href="#" class="red"><span> Red</span></a>
+  <a href="#" class="gray"><span> Gray</span></a>
+</div>
+
+<div class="main">
+  <h2>Hoverable Sidenav Buttons</h2>
+  <p>Hover over the buttons <i>in</i> the left side navigation to open them.</p>
+</div>
+
+</body>
+</html>
